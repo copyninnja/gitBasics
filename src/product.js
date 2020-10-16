@@ -5,7 +5,8 @@ class Product {
         this.price = price;
          this.quantityInStock = initialQuantity
         this.reorderLevel = reorderLevel
-    }
+    } 
+  
 }
 
 
