@@ -15,6 +15,15 @@ class Catalogue {
       return true;
     }
     return false;
+  } 
+   removeProductById(id) {
+    const removedProduct = this.findProductById(id);
+    if (removedProduct) {
+      this.products = this.products.filter(
+        (product) => product.id !== id // ***********
+      );
+    }
+    return removedProduct;
   }
 }
 module.exports = Catalogue;
